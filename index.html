@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Pixel Art Tracker</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+<!-- ── Room (background is a pixel-art scene that swaps by time of day) ── -->
+<div id="room">
+  <div id="scene">
+    <!-- Desk items injected by JS, positioned over the desk in the scene image -->
+    <div id="desk"></div>
+  </div>
+</div>
+
+<!-- ── Time badge ── -->
+<div id="time-badge">DAY</div>
+
+<!-- ── Panel (slides up) ── -->
+<div id="panel">
+  <div id="panel-header">
+    <div id="panel-title">—</div>
+    <button id="panel-close">✕</button>
+  </div>
+  <div id="panel-body">
+    <div class="section" id="sec-brain"></div>
+    <div class="section" id="sec-planner"></div>
+    <div class="section" id="sec-piggy"></div>
+    <div class="section" id="sec-v60"></div>
+    <div class="section" id="sec-scroll"></div>
+  </div>
+</div>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>
